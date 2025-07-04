@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script src="script1.js"></script>
+    <title>student details</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td>
+          <form onsubmit="event.preventDefault();onFormSubmit();">
+            <h2>Enter student details</h2>
+            <div>
+              <label for="stuname">Name</label><br />
+              <input
+                type="text"
+                class="stuname"
+                id="stuname"
+                placeholder="Enter the student Name"
+              />
+            </div>
+            <div>
+              <label for="stucourse">course</label><br />
+              <input
+                type="text"
+                class="stucourse"
+                id="stucourse"
+                placeholder="Enter the student cource"
+              />
+            </div>
+            <div>
+              <label for="stucollege">college</label><br />
+              <input
+                type="text"
+                class="stucollege"
+                id="stucollege"
+                placeholder="Enter the college name"
+              />
+            </div>
+            
+            <div>
+              <input type="submit" value="submit" />
+            </div>
+          </form>
+        </td>
+        <td>
+          <table
+            class="list"
+            id="stulist"
+            style="background-color: darkgoldenrod"
+          >
+            <thead>
+              <th>Name</th>
+              <th>cource</th>
+              <th>college</th>
+              
+            </thead>
+            <tbody></tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html> 
